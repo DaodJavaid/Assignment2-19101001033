@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Task4_19101001033</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Task4_19101001033.styles.css" asp-append-version="true" />
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" id="navb">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                   <img src="~/images/logo.png" alt="Logo" id="top_logo"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="navb_item">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="menu" id="menu_item" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" id="menu_item" asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" id="menu_item" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" id="menu_item" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <!-- Footer -->
+<div class="container-fluid" id="footer">
+<div class="container" id="inner_footer">
+<div class="row row-cols-md-auto">
+
+<div class="col-md-3" id="col-1">
+    <img src="/images/logo.png" alt="Footer Logo" id="footer_logo">
+    <p id="footer_desp">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="Social_Icon">
+    <a href="#" id="icon"> <i class="bi bi-twitter"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-facebook"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-youtube"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-instagram"></i></a>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <h2 id="footer_title">Quick Links</h2>
+     <div class="col-4" id="footer_col_menu">
+                  <a class="menu" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                  <a class="menu"  asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+                  <a class="menu" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                  <a class="menu" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+              </div>
+</div>
+
+
+<div class="col-md-3" id="col-1">
+    <h2 id="footer_title1">Sign up for newsletter</h2>
+    <form action="post">
+        <input type="text" placeholder="Your Email Address" id="footer_input">
+        <button class="btn btn-primary" id="footer_button">  Subscribe Now</button>
+
+    </form>
+</div>
+
+
+<div class="col-md-3" id="col-1">
+    <h2 id="footer_title1">Store Information</h2>
+    <p id="footer_desp">2005 Stokes Isle Apartment.<br> 896, Washington 10010, USA, <br>
+        info@example.com <br>
+        (+68) 120034509</p>
+    <div class="Social_Icon">
+    <a href="#" id="icon"> <i class="bi bi-credit-card"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-wallet2"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-credit-card"></i></a>
+    <a href="#" id="icon"> <i class="bi bi-wallet2"></i></a>
+    </div>
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- Footer -->
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

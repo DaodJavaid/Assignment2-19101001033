@@ -1,0 +1,126 @@
+﻿@{
+  //  ViewData["Title"] = "Home Page";
+}
+
+
+
+<!-- Banner Start -->
+    <div class="container-fluid">
+        <div class="row" id="banner"></div>
+        <div class="row" id="banner_text">
+            <h4 id="title_banner_1">BIG SALE OFFER</h4>
+            <h1 id="parts">PARTS & REPAIR</h1>
+            <h5 id="parts">EXCLUSIVE EXCHANGE OFFER & 30% OFF IN THIS WEEK</h5>
+        </div>
+        <a class="button" id="banner_button" asp-area="" asp-controller="Home" asp-action="Shop">Shop Now</a>
+                   
+        
+    </div>
+<!-- Banner End -->
+
+<!-- Cetegories Start -->
+    <div class="container" id="categories">
+        <div class="row">
+            <div class="col-md-4" id="categories1">
+                <img src="~/images/categories 1.jpg" alt="categories 1" id="categories1_img1">
+                <div class="material1">
+                <h3 id="material1_title" >From $96</h3>
+                <h1 id="material1_desp" >LATEST CAR WHEEL</h1>
+              <a class="button" asp-area="" asp-controller="Home" asp-action="Shop">Shop Now</a>
+      </div>
+            </div>
+            <div class="col-md-4" id="categories2">
+                <img src="~/images/categories 2.jpg" alt="categories 1" id="categories1_img2">
+                <div class="material1">
+                    <h3 id="material1_title" >From $96</h3>
+                    <h1 id="material1_desp" >LATEST CAR WHEEL</h1>
+              <a class="button" asp-area="" asp-controller="Home" asp-action="Shop">Shop Now</a>
+         </div>
+            </div>
+            <div class="col-md-4" id="categories3">
+                <img src="~/images/categories 3.jpg" alt="categories 1" id="categories1_img3">
+                <div class="material1">
+                    <h3 id="material1_title" >From $96</h3>
+                    <h1 id="material1_desp" >LATEST CAR WHEEL</h1>
+              <a class="button" asp-area="" asp-controller="Home" asp-action="Shop">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Cetegories End -->
+
+<!-- Items Start -->
+
+    <div class="container_fluid" id="item">
+    <div class="row" id="row1">
+    <h1 id="row1_title"><b> POPULAR ITEM</b></h1>
+    </div>
+    <div class="row" id="row2">
+
+    <div class="col-md-4" id="first_product">
+    <div class="inner_first_product">
+
+    <img src="~/images/product1.jpg" alt="Product 1">
+    <h5 style="text-align: left; margin-top: -8rem; padding-left: 2rem; ">Auto Clutch & Brake</h5>
+    <p style="text-align: left;  padding-left: 2rem; ">Price: $120.0</p>
+    <a class="Item_button" asp-area="" asp-controller="Home" asp-action="Single_product">Shop Now</a>
+    </div>
+</div>
+
+    <div class="col-md-4" id="first_product">
+    <img src="~/images/product1.jpg" alt="Product 1">
+    <h5 style="text-align: left; margin-top: -8rem; padding-left: 2rem; ">Auto Clutch & Brake</h5>
+    <p style="text-align: left;  padding-left: 2rem; ">Price: $120.0</p>
+    <a class="Item_button" asp-area="" asp-controller="Home" asp-action="Single_product">Shop Now</a>
+    </div>
+
+    
+    <div class="col-md-4" id="first_product">
+        <img src="~/images/product1.jpg" alt="Product 1">
+        <h5 style="text-align: left; margin-top: -8rem; padding-left: 2rem; ">Auto Clutch & Brake</h5>
+    <p style="text-align: left;  padding-left: 2rem; ">Price: $120.0</p>
+    <a class="Item_button" asp-area="" asp-controller="Home" asp-action="Single_product">Shop Now</a>
+    </div>
+        
+</div>
+</div>
+<!-- Items End -->
+
+<!-- DISCOUNT Start -->
+
+<div class="container_fluid" id="discount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="discount_image"></div>
+            <div class="col-md-6" id="discount_second_section">
+                <h1 id="car_parts"> <b> HAVE A SPECIAL <br> DISCOUNT</b></h1>
+                <h2 id="car_parts_para">ALL NEW CAR PARTS</h2>
+                <form action="post">
+                    <input type="text" placeholder="Your Email Address" id="discount_input">
+                    <button class="btn btn-primary" id="discount_button"> Subscribe Now</button>
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- DISCOUNT End -->
+
+<!-- Last Home Section Start   -->
+<div class="container-fluid" id="time_offer"> 
+    <div class="row">
+        <div class="col-md-12">
+            <h5>30% Limited Time Offer</h5>
+            <h1 style="margin-bottom: 2rem;" >CAR PARTS FOR SHORT PEOPLE</h1>
+            <a class="button" id="last_button" asp-area="" asp-controller="Home" asp-action="Shop">Shop Now</a>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid" id="last_back"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Last Home Section End -->
