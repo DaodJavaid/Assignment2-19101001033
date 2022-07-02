@@ -1,0 +1,75 @@
+﻿@{
+  //  ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+<form method="post" action="/Home/Test" >
+
+    <input type="text" id="first_name" placeholder="Enter First Name" name="first_name" style="width: 15rem;"/>
+    <br/><br/>
+    
+    <input type="text" id="last_name" placeholder="Enter Last Name" name="last_name" style="width: 15rem;"/>
+    <br/>
+    <br/>
+    <input type="email" id="email" placeholder="Enter Email" name="email" style="width: 15rem;"/>
+    <br/>
+    <input type="tel" id="phone" placeholder="Enter Phone" name="phone" style="height: 2.5rem; width: 15rem;"/>
+    <br/>
+   <br/>
+     
+    <input type="radio" id="gridRadios2" value="Man" name="man_option">
+    <label class="form-check-label" for="gridRadios2">Man</label>
+    <input type="radio" id="gridRadios2" value="Wooman" name="wooman_option">
+    <label class="form-check-label" for="gridRadios2">Woman</label>
+    <br/>
+    <br/>
+    
+    <select style="width: 15rem;">
+        <option selected>Customer Department</option>
+        <option value="sale" name="sale" >Sale</option>
+        <option value="it" name="it">IT</option>
+    </select>
+    <br/>
+  <br/>
+      
+    <textarea type="text" id="Messege" name="textarea" style="width: 15rem;"></textarea>
+    <br/>
+    <input type="submit" value="submit" class="btn btn-danger"/>
+
+</form>
+</div>
+
+<div class="col-md-6">
+    <h1>Display Data</h1>
+    <h1>
+        @ViewBag.Firstname
+        <br/>
+        @ViewBag.Listname
+        <br/>
+        @ViewBag.Email
+        <br/>
+        @ViewBag.Phone
+        <br/>
+        @ViewBag.Option1
+        <br/>
+        @ViewBag.Option2
+        <br/>
+        @ViewBag.dropdown1
+        <br/>
+        @ViewBag.dropdown2
+        <br/>
+        @ViewBag.Messege
+        <br/>
+        
+
+    </h1>
+
+</div>
+
+
+
+    </div>
+    </div>

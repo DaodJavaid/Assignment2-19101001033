@@ -34,6 +34,39 @@ namespace Task4_19101001033.Controllers
         {
             return View();
         }
+        public IActionResult DBForm()
+        {
+            return View();
+        }
+
+        public IActionResult Test(string first_name, string last_name, string email , 
+                                  string phone , string man_option , string wooman_option ,
+                                  string sale , string it , string textarea)
+        {
+
+            ViewBag.Firstname = first_name;
+            ViewBag.Listname = last_name;
+            ViewBag.Email = email;
+            ViewBag.Phone = phone;
+            ViewBag.Option1 = man_option;
+            ViewBag.Option2 = wooman_option;
+            ViewBag.dropdown1 = sale;
+            ViewBag.dropdown2 = it;
+            ViewBag.Messege = textarea;
+
+            return View("DBForm");
+        }
+
+
+
+
+
+
+
+
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
