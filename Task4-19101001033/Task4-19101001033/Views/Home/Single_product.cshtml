@@ -11,8 +11,10 @@
 
             
             <div class="col-md-6" id="single_product_title">
-                <h1 style="text-align: left;">Auto Clutch & Brake</h1>
-                <h5 style="text-align: left;">$440.00</h5>
+                
+                 <form method="post" action="~/Home/Single_Product_count" >
+                     <input type="text" name="pname" value="Auto Clutch & Brake" readonly  id="product_name"/>
+              <input type="text" name="price" value="440" readonly id="product_price"/>
                 <span class="fa fa-star " id="checked"></span>
                 <span class="fa fa-star " id="checked"></span>
                 <span class="fa fa-star " id="checked"></span>
@@ -24,7 +26,10 @@
                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
                  com consequat. Duis aute irure dolor in reprehend in voluptate velit esse 
                  cillum dolore</p>
-                 <button class="btn btn-primary" id="signle_btn"> ADD TO CART</button>
+                     <input type="number" placeholder="1" min="1" name="count" style="width: 3.125rem; padding-left: 1rem;"/>
+                 <button type="submit" class="btn btn-primary" id="signle_btn"> ADD TO CART</button>
+                
+                 </form>
                  <h4 style="margin-top: 1.6rem;">SKU : <a href="#" id="sku">Ch-256xl</a></h4>
                  <h4>Categories : <a href="#" id="sku">Office, Home</a></h4>
                  <h4>Tags : <a href="#" id="sku">Furniture</a></h4>

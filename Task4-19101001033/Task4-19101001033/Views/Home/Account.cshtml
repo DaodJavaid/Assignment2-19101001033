@@ -1,0 +1,104 @@
+﻿<link rel="stylesheet" href="~/css/site.css" />
+
+
+<div class="container" id="mainAccount" >
+    <div class="row">
+        <div class="col-md-6" id="sign_in" >
+
+            <h1 style="padding-bottom: 1.2rem;">
+                Sign In
+            </h1>
+
+            <form method="post" action="~/Home/Login" id="sign_in_form">
+                <lable id="lable_email"><b>Email*</b></lable>
+                <br/>
+                <input type="text" id="email_sign_in" placeholder="Enter your Email" name="email"/>
+                <br/>
+                <br/>
+                <lable id="lable_email"><b>Password*</b></lable>
+                <br/>
+                <input type="password" id="password_sign_in" placeholder="Enter Yor Password" name="password"/>
+                <br />
+                <br />
+
+                <input type="submit" value="Sign In" class="btn btn-danger" id="button_sign_in"/>
+            </form>
+
+        </div>
+        
+        <div class="col-md-6" id="sign_up">
+            
+            <h1>
+                Sign Up
+            </h1>
+
+           <form method="post" action="~/Home/Signup">
+
+                <div class="container">
+
+                    <div class="row"> 
+                
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">First name </label>
+                <br />
+                <br />
+                <input type="text"/ id="Checkout_input_account_field" placeholder="Enter First Name" name="firstname">
+                
+                </div>
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">Last name </label>
+                <br />
+                <br />
+                <input type="text"/ id="Checkout_input_account_field" placeholder="Enter Last Name" name="lastname">
+                
+                </div>
+
+                </div> 
+                
+                
+                <div class="row" style="margin-top: 1rem;"> 
+                
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">Email address</label>
+                <br />
+                <br />
+                <input type="email"/ id="Checkout_input_account_field" placeholder="Enter Email" name="email">
+                
+                </div>
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">Phone </label>
+                <br />
+                <br />
+                <input type="number"/ id="Checkout_input_account_field" placeholder="Enter Phone Number" name="phone">
+                </div>
+
+                </div> 
+                
+                 <div class="row" style="margin-top: 1rem;"> 
+                
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">Enter New Password</label>
+                <br />
+                <br />
+                <input type="password"/ id="Checkout_input_account_field" placeholder="Enter New Password" name="password">
+                
+                </div>
+                        <div class="col-md-6"> 
+                <label id="Checkout_input_billing_head">Confirm Password </label>
+                <br />
+                <br />
+                <input type="password"/ id="Checkout_input_account_field" placeholder="Enter Confirm Password">
+                </div>
+
+                </div> 
+               
+                         <input type="submit" value="Sign Up" class="btn btn-danger" id="button_sign_in" style="margin-top: 1rem;"/>
+       
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>

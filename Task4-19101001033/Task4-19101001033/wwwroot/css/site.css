@@ -3,6 +3,10 @@
     --bs-gutter-x: 0;
 }
 
+.row {
+    --bs-gutter-x: 0;
+}
+
 html {
     font-size: 14px;
 }
@@ -255,7 +259,8 @@ nav {
     padding-left: 5rem;
     padding-right: 5rem;
     border-radius: 2rem;
-    margin-left: 7rem;
+    margin-left: 1.6rem;
+
 }
 
     #signle_btn:hover {
@@ -266,8 +271,24 @@ nav {
         padding-left: 5rem;
         padding-right: 5rem;
         border-radius: 2rem;
-        margin-left: 7rem;
+        margin-left: 1.6rem;
     }
+
+#product_name {
+    border: none;
+    font-size: 1.8rem;
+    outline: none;
+    font-weight: bold;
+}
+
+#product_price
+{
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    font-weight:600;
+}
+
 
 #social_icon_single_product {
     color: #b0aaaa;
@@ -762,5 +783,101 @@ nav {
 }
 
 
+/*///// Accunt///// */
+
+#sign_in_form
+{
+    padding-left: 5rem;
+}
+
+#sign_in, #sign_up 
+{
+    height: 700px;
+    border-right: 1px solid black;
+    padding: 80px;
+}
+
+#lable_email {
+    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: initial;
+}
 
 
+#email_sign_in, #password_sign_in 
+{
+    width: 15rem;
+}
+
+
+#top_back {
+   background-color: blue;
+   height: 300px; 
+   padding: 1rem;
+}
+
+#second_section {
+    margin-top: 2rem;
+}
+
+#left_section {
+    border: 1px solid black;
+    height: 800px;
+    padding-left: 6rem;
+    padding-top: 2rem;
+}
+
+#right_section {
+    padding: 1.2rem;  
+    height: 800px; 
+    border: 2px solid black; 
+}
+
+#horizantol_line {
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    margin-top: 3.15rem;
+    height: 0.2rem;
+}
+
+
+#Checkout_input_head
+{
+    float: left;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+#Checkout_input_field
+{
+    width: 100%;
+}
+
+#place_order_button
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+
+#Checkout_input_billing_head {
+    float: left;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#Checkout_input_billing_field 
+{
+    height: 2.5rem;
+    width: 15.6rem;
+    padding-left: 1rem;
+}
+
+#Checkout_input_account_field {
+    height: 2.5rem;
+    width: 13rem;
+    padding-left: 1rem;
+}

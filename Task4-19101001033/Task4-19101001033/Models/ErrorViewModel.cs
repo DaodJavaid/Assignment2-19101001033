@@ -1,6 +1,6 @@
 namespace Task4_19101001033.Models
 {
-    public class ErrorViewModel
+    public class AccountViewModel
     {
         public string? RequestId { get; set; }
 
